@@ -23,11 +23,11 @@ import unittest
 
 class Data_type_test(unittest.TestCase):
 	def test_data_type(self):
-		self.assertEqual(data_type(1), "less than 100")
+		self.assertEqual(data_type(99), "less than 100")
 		self.assertEqual(data_type(100), "equal to 100")
-		self.assertEqual(data_type(101), "more than 100")
-		self.assertEqual(data_type('julius'), 6)
+		self.assertEqual(data_type(500), "more than 100")
+		self.assertEqual(data_type('solomon'), 7)
 		self.assertEqual(data_type(True), True)
 		self.assertEqual(data_type(False), False)
-		self.assertEqual(data_type([1,2,3,4]), 3)
+		self.assertEqual(data_type([1,5,3,2]), 3)
 unittest.main()
